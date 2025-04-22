@@ -12,17 +12,21 @@
     {timing: 2, fun: red}
  ]
  //functions
- function redYellow(timing) {
-    setTimeout(() => setRedYellow(), timing);
+ async function redYellow(timing) {
+    await sleep(timing);
+    setRedYellow()
  }
- function green(timing) {
-    setTimeout(() => setGreen(), timing);
+ async function green(timing) {
+    await sleep(timing);
+    setGreen()
  }
- function red(timing) {
-    setTimeout(() => setRed(), timing)
+ async function red(timing) {
+    await sleep(timing);
+    setRed()
  }
- function yellow(timing) {
-    setTimeout(() => setYellow(), timing)
+ async function yellow(timing) {
+    await sleep(timing);
+    setYellow()
  }
  function setRedYellow() {
     traficLightElms[0].classList.remove(GRAY_CLASS);
@@ -63,8 +67,24 @@
  //actions
   setRed();
  
-  statesMachine.forEach(({fun, timing}) => fun(timing * 1000))
-
+async function oneIteration() { 
+        for(let i = 0; i < statesMachine.length; i++) {
+            await statesMachine[i].fun(statesMachine[i].timing);
+      }
+    }
+    
+(async () => {
+    while(true) {
+        await oneIteration()
+    }
+})();
+ 
+ 
+ function sleep(timing) {
+    return new Promise(resolve => {
+        setTimeout(() => resolve(), timing * 1000)
+    })
+} 
 
 
 
