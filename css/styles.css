@@ -14,21 +14,9 @@
 .trafficLight-green {
     background-color: green;
 }
-.btn {
-    border-radius: 5px;  
-      padding: 5px 10px;
-    cursor: pointer;
-    margin: 20px;
-    border-color: black;
-    border-width: 5px;
-
-   
+.trafficLight-yellow {
+    background-color: yellow;
 }
-.btn-primary {
-    background-color: dodgerblue;
-}
-.btn-gradient {
-    background-image: linear-gradient(red, green);
-    color: aliceblue;
-    font-weight: bold;
+.trafficLight-gray {
+    background-color: gray;
 }
