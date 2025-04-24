@@ -1,10 +1,38 @@
-table, th, td {
-    border: 1px solid;
-  }
-  table {
-    border-collapse: collapse;
-    width: 500px
-  }
-  td {
-    text-align: center;
-  }
+
+* {
+  box-sizing: border-box;
+ 
+}
+
+.boxes {
+  width: 800px;
+  height: 500px;
+  border: 3px solid black;
+  padding: 10px;
+  margin:15px;
+  color: white
+  
+}
+.box {
+  width: 100px;
+  height: 80px;
+  padding: 5px;
+  
+ 
+
+}
+.box1 {
+  background-color: aqua;
+  border: inherit
+}
+.box2 {
+  background-color: beige;
+  color: initial
+}
+.box3 {
+  background-color: antiquewhite;
+  color: initial
+}
+.box4 {
+  background-color: red;
+}
