@@ -1,26 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="html introduction">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="html introduction" />
     <title>Document</title>
-    <link rel="stylesheet" href="/css/styles.css">
-</head>
-<body>
- <form id="form_id">
-    <input type="text" required name="name" placeholder="Enter employee name" pattern="[A-Z][a-z]{2,10}">
-    <select name="department" required >
-        <option value="" disabled selected>--select department--</option>
-        <option value="QA">QA</option>
-        <option value="Audit">Audit</option>
-        <option value="Accounting">Accounting</option>
-        <option value="Development">Development</option>
-    </select>
-    <input type="number" required min="5000" max="50000" name="salary" placeholder="Enter salary">
-    <button type="submit">Save</button>
-    <button type="reset">Reset</button>
- </form>
- <script src="src/main.js"></script>
-</body>
+    <link rel="stylesheet" href="/css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Page Header</h1>
+    </header>
+    <main>
+      <section>
+        <article>
+          <h2>article heading</h2>
+          <p>
+            <mark>Lorem ipsum</mark>, dolor sit amet consectetur adipisicing elit. Assumenda
+            neque quam a repellendus, velit illum vitae, optio corporis nemo,
+            facilis corrupti qui nostrum autem ad et. <strong>Animi sit nulla</strong> dolorum
+            dignissimos voluptatibus consectetur unde in sequi, ex placeat
+            officiis quaerat repudiandae aut aliquid, dolore officia dicta totam
+            architecto minus delectus.
+          </p>
+          <figure>
+            <img src="https://picsum.photos/id/237/300/200" alt="a cute dog">
+            <figcaption>Cute Dog</figcaption>
+          </figure>
+        </article>
+      </section>
+    </main>
+    <footer>
+      <h3>&copy Tel-Ran &TRADE; <a href="http://tel-ran.com">http://tel-ran.com</a></h3>
+    </footer>
+    <script src="src/main.js"></script>
+  </body>
 </html>
