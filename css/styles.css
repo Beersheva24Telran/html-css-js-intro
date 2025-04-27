@@ -35,7 +35,8 @@ p {
 .box-1 {
   background-color: aqua;
   width: 40rem;
-  height: 15rem
+  height: 15rem;
+  overflow: auto;
 
 }/* 
 .box-2 {
