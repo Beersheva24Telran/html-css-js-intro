@@ -1,40 +1,180 @@
 html {
   font-size: 62.5%;
 }
-.container {
+body {
+  margin: 0;
+ 
+}
+h2 {
+  margin: 0;
+}
+.main {
   display: flex;
   flex-direction: column;
-  width: 80%;
-  height: 100vh;
-  align-items: center;
+  justify-content: start;
 }
-.box {
+.detailedFrame {
+  flex-grow: 1;
   display: flex;
   justify-content: center;
-  align-items: center;
-  width: 9rem;
-  height: 9rem;
-  border: 1px solid lightgray;
-  margin: 1rem 0;
-  font-size:2rem
+  margin-top: 2rem;
 }
-@media screen and (min-width: 400px) {
-  .container {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin-left: 2rem;
-    
+.detailedContainer {
+  position: relative;
+}
+.detailedContainer--image {
+  width: 30rem;
+  height: 25rem;
+  object-fit: cover;
+ border-radius: 30px;
+}
+.detailedContainer--title {
+  display: inline-block;
+  width: 50ch;
+  position: absolute;
+  font-size: 1.5rem;
+  bottom: 1rem;
+  left: -3rem;
+  background-color: aliceblue;
+  color: black;
+ 
+ 
+  
+  font-style: italic;
+}
+
+.gallery--item_image {
+  width: 10rem;
+  height: 8rem;
+  object-fit: cover;
+}
+.gallery {
+  list-style: none;
+  max-height: 50vh;
+  width: 30rem;
+  overflow: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding-left: 4rem;
+}
+.gallery--item_title {
+  display: block;
+  width: 10rem;
+  height: 2.8rem;
+  font-size: 1.2rem;
+  background-color: aliceblue;
+  text-align: center;
+}
+.gallery--item_image {
+  display: block;
+}
+.gallery--item {
+  border: 2px solid lightgrey;
+  border-radius: 40px;
+  overflow: hidden;
+  min-width: 10rem;
+  max-height: 9.5rem;
+  margin-top: 10px;
+}
+.logo {
+  font-family: LakeshoreDrive;
+  font-size: 2rem;
+  text-align: center;
+  background-color: azure;
+  text-transform: uppercase;
+  letter-spacing: 8px;
+}
+
+@media screen and (min-width: 500px) {
+  .main {
+    flex-direction: row-reverse;
+    flex-wrap: nowrap;
   }
-  .box {
-    width: 12rem
+  .detailedContainer {
+    margin-top: 2.2rem;
+  }
+  .detailedContainer--title {
+    bottom: 4rem;
+  }
+
+  .gallery--item_image {
+    width: 12rem;
+    height: 10rem;
+  }
+  .gallery {
+    max-height: 80vh;
+    width: auto;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    padding-left: 4rem;
+    justify-content: flex-start;
+  }
+
+  .gallery--item {
+    min-width: 12rem;
+    min-height: 13rem;
+    max-height: 9rem;
+  }
+  .gallery--item_title {
+    width: 12rem;
+    height: 3rem;
+    font-size: 1.5rem;
+    background-color: aliceblue;
+    text-align: center;
   }
 }
-@media screen and (min-width: 900px) {
-  .box {
+@media screen and (min-width: 1000px) {
+  
+  .detailedFrame {
+    margin-top: 5rem;
+  }
+  .detailedContainer--image {
+    width: 60rem;
+    height: 45rem;
+  }
+  .detailedContainer--title {
+    width: 50ch;
+    position: absolute;
+    font-size: 2.8rem;
+    bottom: 5rem;
+    left: -10rem;
+  }
+  
+ 
+
+  .gallery--item_image {
     width: 25rem;
-    color: red;
+    height: 15rem;
   }
+  .gallery {
+    list-style: none;
+    max-height: 85vh;
+    padding-right: 3rem;
+    margin-left: 4rem;
+  }
+  .gallery--item_title {
+    display: block;
+    width: 25rem;
+    font-size: 2.5rem;
+    background-color: aliceblue;
+    text-align: center;
+  }
+  .gallery--item_image {
+    display: block;
+  }
+  .gallery--item {
+    width: 25rem;
+    min-width: 25rem;
+    min-height: 18rem;
+    max-height: 18rem;
+  }
+  
 
+  .gallery li:nth-child(1) {
+    margin-top: 0;
+  }
+  .logo {
+    font-size: 4rem;
+  }
 }
-
