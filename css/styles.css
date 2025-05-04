@@ -22,13 +22,13 @@ h2 {
 .detailedContainer {
   position: relative;
 }
-.detailedContainer--image {
+.detailedContainer_image {
   width: 30rem;
   height: 25rem;
   object-fit: cover;
  border-radius: 30px;
 }
-.detailedContainer--title {
+.detailedContainer_title {
   display: inline-block;
   width: 50ch;
   position: absolute;
@@ -43,7 +43,7 @@ h2 {
   font-style: italic;
 }
 
-.gallery--item_image {
+.gallery_item_image {
   width: 10rem;
   height: 8rem;
   object-fit: cover;
@@ -58,7 +58,7 @@ h2 {
   justify-content: space-around;
   padding-left: 4rem;
 }
-.gallery--item_title {
+.gallery_item_title {
   display: block;
   width: 10rem;
   height: 2.8rem;
@@ -66,10 +66,10 @@ h2 {
   background-color: aliceblue;
   text-align: center;
 }
-.gallery--item_image {
+.gallery_item_image {
   display: block;
 }
-.gallery--item {
+.gallery_item {
   border: 2px solid lightgrey;
   border-radius: 40px;
   overflow: hidden;
@@ -94,11 +94,11 @@ h2 {
   .detailedContainer {
     margin-top: 2.2rem;
   }
-  .detailedContainer--title {
+  .detailedContainer_title {
     bottom: 4rem;
   }
 
-  .gallery--item_image {
+  .gallery_item_image {
     width: 12rem;
     height: 10rem;
   }
@@ -111,12 +111,12 @@ h2 {
     justify-content: flex-start;
   }
 
-  .gallery--item {
+  .gallery_item {
     min-width: 12rem;
     min-height: 13rem;
     max-height: 9rem;
   }
-  .gallery--item_title {
+  .gallery_item_title {
     width: 12rem;
     height: 3rem;
     font-size: 1.5rem;
@@ -129,21 +129,21 @@ h2 {
   .detailedFrame {
     margin-top: 5rem;
   }
-  .detailedContainer--image {
+  .detailedContainer_image {
     width: 60rem;
     height: 45rem;
   }
-  .detailedContainer--title {
+  .detailedContainer_title {
     width: 50ch;
     position: absolute;
     font-size: 2.8rem;
-    bottom: 5rem;
-    left: -10rem;
+    bottom: 3rem;
+    left: -8rem;
   }
   
  
 
-  .gallery--item_image {
+  .gallery_item_image {
     width: 25rem;
     height: 15rem;
   }
@@ -153,17 +153,17 @@ h2 {
     padding-right: 3rem;
     margin-left: 4rem;
   }
-  .gallery--item_title {
+  .gallery_item_title {
     display: block;
     width: 25rem;
     font-size: 2.5rem;
     background-color: aliceblue;
     text-align: center;
   }
-  .gallery--item_image {
+  .gallery_item_image {
     display: block;
   }
-  .gallery--item {
+  .gallery_item {
     width: 25rem;
     min-width: 25rem;
     min-height: 18rem;
