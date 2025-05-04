@@ -1,42 +1,40 @@
 html {
   font-size: 62.5%;
 }
-body {
-  margin:0
-}
-main {
-  display: grid;
-  grid-template-columns: 20% 1fr;
-  grid-template-rows: 10% 1fr 10%;
-  width: 100vw;
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
   height: 100vh;
-  grid-template-areas: "header  header"
-                       "sidebar content"
-                       "footer  footer";
+  align-items: center;
 }
-header {
-  grid-area: header;
-  background-color: blue;
-  color: white;
-  text-align: center;
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 9rem;
+  height: 9rem;
+  border: 1px solid lightgray;
+  margin: 1rem 0;
+  font-size:2rem
 }
-footer {
-  grid-area: footer;
-  background-color: green;
-  color: white;
-  text-align: center;
+@media screen and (min-width: 400px) {
+  .container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-left: 2rem;
+    
+  }
+  .box {
+    width: 12rem
+  }
 }
-.sidebar {
-  grid-area: sidebar;
-  background-color: gray;
+@media screen and (min-width: 900px) {
+  .box {
+    width: 25rem;
+    color: red;
+  }
+
 }
-.content {
-  grid-area: content;
-  background-color: yellow;
-}
-
-
-
-
-
 
