@@ -38,11 +38,25 @@ p {
  font-family: 'Open Sans';
 }
 .roboto_text {
-  font-weight: 100;
-  font-size: 2rem
+  font-weight: 500;
+  font-size: 2rem;
+  overflow: hidden;
+  width: 50ch;
+white-space: nowrap;
+text-overflow: ellipsis;
+}
+.roboto_text:hover {
+  white-space: wrap;
+}
+.roboto_text::selection {
+  text-decoration: underline;
+  background-color: azure;
 }
 .openSans_text {
-  font-weight: 100
+  font-weight: 300;
+  column-count: 2;
+  column-gap: 3rem;
+  column-rule-style:dashed;
 }
 .roboto_heading {
   letter-spacing: -1;
