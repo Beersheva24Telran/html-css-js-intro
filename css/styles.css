@@ -21,6 +21,7 @@ h2 {
 }
 .detailedContainer {
   position: relative;
+  
 }
 .detailedContainer_image {
   width: 30rem;
@@ -30,17 +31,17 @@ h2 {
 }
 .detailedContainer_title {
   display: inline-block;
-  width: 50ch;
+  width: 30ch;
   position: absolute;
   font-size: 1.5rem;
   bottom: 1rem;
   left: -3rem;
   background-color: aliceblue;
   color: black;
- 
- 
-  
   font-style: italic;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 .gallery {
   list-style: none;
@@ -59,6 +60,7 @@ h2 {
   min-width: 10rem;
   max-height: 9.5rem;
   margin-top: 10px;
+  cursor: pointer;
 }
 .gallery_item_image {
   width: 10rem;
@@ -85,6 +87,9 @@ h2 {
   background-color: azure;
   text-transform: uppercase;
   letter-spacing: 8px;
+}
+.detailedContainer_title:hover {
+  white-space: wrap
 }
 
 @media screen and (min-width: 500px) {
@@ -135,7 +140,7 @@ h2 {
     height: 45rem;
   }
   .detailedContainer_title {
-    width: 50ch;
+    width: 38ch;
     position: absolute;
     font-size: 2.8rem;
     bottom: 3rem;
