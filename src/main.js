@@ -1,2 +1,7 @@
-const ar = Array.from({length: 50}, () => Math.floor(Math.random() * 2));
-console.log(ar);
+let boxAnimationElement = document.getElementById("moving-circle");
+function start() {
+  boxAnimationElement.classList.add("animation");
+}
+function stop() {
+  boxAnimationElement.classList.remove("animation");
+}
