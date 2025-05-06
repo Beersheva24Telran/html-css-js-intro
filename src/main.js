@@ -7,4 +7,5 @@ function setDetails(itemElement) {
     detailedContainerImage.src = itemElement.getAttribute("data-detailed-image");
     detailedContainerTitle.innerHTML = itemElement.getAttribute("data-detailed-title");
 }
+//actions
 galleryItems.forEach((item,index) => item.addEventListener("click", () => setDetails(galleryItems[index])));
