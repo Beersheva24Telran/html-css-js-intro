@@ -8,6 +8,14 @@ body {
 h2 {
   margin: 0;
 }
+.animation-left {
+  animation: backInLeft;
+  animation-duration: 2s;
+}
+.animation-right {
+  animation: backInRight;
+  animation-duration: 2s;
+}
 .main {
   display: flex;
   flex-direction: column;

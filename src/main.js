@@ -6,6 +6,16 @@ const detailedContainerTitle = document.querySelector(".detailedContainer_title"
 function setDetails(itemElement) {
     detailedContainerImage.src = itemElement.getAttribute("data-detailed-image");
     detailedContainerTitle.innerHTML = itemElement.getAttribute("data-detailed-title");
+    animate();
+}
+function animate() {
+    toggleAnimations(detailedContainerTitle);
+    toggleAnimations(detailedContainerImage);
+    
+}
+function toggleAnimations(element) {
+    element.classList.toggle("animation-left");
+    element.classList.toggle("animation-right"); 
 }
 //actions
 galleryItems.forEach((item,index) => item.addEventListener("click", () => setDetails(galleryItems[index])));
