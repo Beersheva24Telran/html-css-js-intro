@@ -30,6 +30,10 @@ body {
 .movement {
   animation: move 5s linear 0.5s infinite ;
 }
+.animation-entrance {
+  animation: backInLeft;
+  animation-duration: 2s;
+}
 .box {
   width: 10rem;
   height: 10rem;
