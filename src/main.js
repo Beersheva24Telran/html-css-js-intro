@@ -9,13 +9,18 @@ function setDetails(itemElement) {
     animate();
 }
 function animate() {
-    toggleAnimations(detailedContainerTitle);
-    toggleAnimations(detailedContainerImage);
+    detailedContainerImage.classList.remove("animation-left");
+    detailedContainerTitle.classList.remove("animation-right");
+    setTimeout(addAnimationClasses);
     
 }
 function toggleAnimations(element) {
     element.classList.toggle("animation-left");
     element.classList.toggle("animation-right"); 
+}
+function addAnimationClasses() {
+    detailedContainerImage.classList.add("animation-left");
+    detailedContainerTitle.classList.add("animation-right"); 
 }
 //actions
 galleryItems.forEach((item,index) => item.addEventListener("click", () => setDetails(galleryItems[index])));
