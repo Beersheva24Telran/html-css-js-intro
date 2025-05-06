@@ -1,40 +1,51 @@
+@keyframes move {
+  0% {
+    transform: scale(1);
+  };
+  25% {
+    transform: scale(1.5);
+  }; 
+  50% {
+    
+    transform: translate(20px);
+    background: red;
+  }
+  75% {
+    transform: translate(0, 15px)
+  }
+  100% {
+    transform: translate(-30px)
+  }
+
+}
 html {
   font-size: 62.5%;
 }
-.container {
+body {
   display: flex;
-  flex-direction: column;
-  width: 80%;
   height: 100vh;
-  align-items: center;
-}
-.box {
-  display: flex;
   justify-content: center;
   align-items: center;
-  width: 9rem;
-  height: 9rem;
-  border: 1px solid lightgray;
-  margin: 1rem 0;
-  font-size:2rem
 }
-@media screen and (min-width: 400px) {
-  .container {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin-left: 2rem;
-    
-  }
-  .box {
-    width: 12rem
-  }
+.movement {
+  animation: move 5s linear 0.5s infinite ;
 }
-@media screen and (min-width: 900px) {
-  .box {
-    width: 25rem;
-    color: red;
-  }
-
+.box {
+  width: 10rem;
+  height: 10rem;
+  background-color: gold;
+  font-size: 1.4rem;
+  /* transition: transform 5s cubic-bezier(.62,.19,.36,.62), background-color 6s; */
+ /* animation: move 5s linear 1s infinite; */
+}
+.box:hover {
+  /* transform: scale(1.5); */
+ /* transform: rotate(-15deg) */
+ /* transform: skew(15deg) */
+ /*transform: translate(-20px, -30px);*/
+ /* transform: perspective(200px) translateZ(-20px) */
+ /* transform: perspective(200px) rotateY(-40deg) */
+ transform: scale(1.5) translate(20px) rotate(25deg);
+ background-color: tomato;
 }
 
