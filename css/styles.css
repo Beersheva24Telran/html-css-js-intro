@@ -109,6 +109,16 @@ h2 {
 
 
 }
+#hidingButton {
+  fill: red;
+  width: 3rem;
+  height: 3rem;
+  background-color: transparent;
+  border: 0;
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+}
 
 @media screen and (min-width: 500px) {
   .main {
