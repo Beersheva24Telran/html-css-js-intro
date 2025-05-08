@@ -10,5 +10,5 @@ class MockService {
         })))
     }
 }
-const serviceObj = new MockService();
-export default serviceObj;
+// const serviceObj = new MockService();
+// export default serviceObj;

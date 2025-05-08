@@ -18,7 +18,7 @@ function getThumbnailItems(data) {
 function getItem({ thumbnailImg, detailedImg, thumbnailTitle, detailedTitle }) {
   const res = `<li class="gallery_item" data-detailed-image="${detailedImg}"
     data-detailed-title="${detailedTitle}" > 
-    <img src="${thumbnailImg}" alt="${thumbnailTitle}" class="gallery_item_image">
+    <img src="${thumbnailImg}" alt="${thumbnailTitle}"  class="gallery_item_image">
     <figcaption class="gallery_item_title">${thumbnailTitle}</figcaption>
       </li>`;
   return res;
