@@ -1,5 +1,5 @@
 const BASE_URL = "https://api.thecatapi.com/v1/breeds"
-class CatsApiService {
+class CatsApiService extends NoQueryService{
     async getData() {
         const resp = await fetch(BASE_URL);
         if (!resp.ok) {
