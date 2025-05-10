@@ -1,3 +1,4 @@
+import NoQueryService from "./NoQueryService.js";
 const BASE_URL = "https://api.thecatapi.com/v1/breeds"
 class CatsApiService extends NoQueryService{
     async getData() {

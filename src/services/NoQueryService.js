@@ -1,6 +1,6 @@
 export default class NoQueryService {
     getFormStructureObject() {
-
+        
     }
     hasNext() {
         return false;
@@ -9,9 +9,9 @@ export default class NoQueryService {
         return false
     }
     getNext() {
-        
+       return []; 
     }
     getPrev() {
-        
+        return [];
     }
 }
