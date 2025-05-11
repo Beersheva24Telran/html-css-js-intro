@@ -1,6 +1,6 @@
 import GalleryComponent from "./components/GalleryComponent.js";
 import QueryFormComponent from "./components/QueryFormComponent.js";
-import serviceObj from "./services/MoviesApiService.js";
+import serviceObj from "./services/CatsApiService.js";
 
 //refernces to the HTML elements
 let galleryItems;
@@ -22,7 +22,9 @@ function setDetails(itemElement) {
     detailedContainerImage.src = itemElement.getAttribute("data-detailed-image");
     detailedContainerTitle.innerHTML = itemElement.getAttribute("data-detailed-title");
     mainElem.classList.remove("hidden");
-    animate();
+    galleryElement.insertBefore(itemElement, galleryElement.firstChild);
+    galleryElement.scrollTo(0, 0);
+    animate(); 
 }
 
 function animate() {
@@ -73,7 +75,9 @@ function getDataFromPromise(dataPromise) {
 });
 }
 //actions
-!formStructureObj && mainElem.classList.remove("none");
+if (!formStructureObj) {
+    mainElem.classList.remove("none");
+     getDataFromService();}
 buttonNext.addEventListener("click",getNextFromService);
 buttonPrev.addEventListener("click",getPrevFromService);
 formStructureObj && buttonQueryElem.addEventListener("click", () => {
