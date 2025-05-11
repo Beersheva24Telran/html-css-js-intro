@@ -1,40 +1,4 @@
-html {
-  font-size: 62.5%;
+.drink {
+  width: 400px;
+  height: 400px;
 }
-.container {
-  display: flex;
-  flex-direction: column;
-  width: 80%;
-  height: 100vh;
-  align-items: center;
-}
-.box {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 9rem;
-  height: 9rem;
-  border: 1px solid lightgray;
-  margin: 1rem 0;
-  font-size:2rem
-}
-@media screen and (min-width: 400px) {
-  .container {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin-left: 2rem;
-    
-  }
-  .box {
-    width: 12rem
-  }
-}
-@media screen and (min-width: 900px) {
-  .box {
-    width: 25rem;
-    color: red;
-  }
-
-}
-
