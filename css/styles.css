@@ -1,4 +1,14 @@
 .drink {
-  width: 400px;
-  height: 400px;
+  width: 100vw;
+  
+}
+@media  screen and (min-width: 500px) {
+  .drink {
+    width: 50vw;
+  }
+}
+@media  screen and (min-width: 1000px) {
+  .drink {
+    width: 33vw;
+  }
 }
