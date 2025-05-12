@@ -1,12 +1,8 @@
 body {
-  /* background-image: url('../images/bg-paper@2x.jpg');
-  background-repeat: no-repeat;
-  background-size: cover; */
-  background: url("../images/bg-sanfrancisco.jpg");
+ 
+  background: url("../images/wintery-sunburst.svg");
   background-repeat: no-repeat;
   background-size: cover;
-  height: 300vh;
-  margin: 0;
-  background-attachment: fixed;
+ 
 
 }
