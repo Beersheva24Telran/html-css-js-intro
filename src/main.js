@@ -1,2 +1,5 @@
-const ar = Array.from({length: 50}, () => Math.floor(Math.random() * 2));
-console.log(ar);
+import RateComponent from "./rate-component.js";
+
+const rateElement = document.getElementById("rate");
+const rateComponent = new RateComponent(5);
+rateComponent.render(rateElement, 50)
