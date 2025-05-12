@@ -8,13 +8,10 @@
     <link rel="stylesheet" href="/css/styles.css" />
   </head>
   <body>
-    <img  alt="plate with salmon and spices" class="drink"
-    srcset="images/meal.jpg 400w,
-            images/meal@2x.webp 800w,
-            images/meal@3x.jpg 1200w" 
-     sizes="(max-width:500) 100vw,
-            (min-width:501) 50vw,
-            33vw"       >
-    
+   <picture class="meal">
+    <source type="image/webp" srcset="images/meal.webp 1x, images/meal@2x.webp 2x">
+    <source type="image/jpg" srcset="images/meal.jpg">
+    <img alt="plate with salmon and spices">
+   </picture>
   </body>
 </html>
