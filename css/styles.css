@@ -1,14 +1,12 @@
-.drink {
-  width: 100vw;
-  
-}
-@media  screen and (min-width: 500px) {
-  .drink {
-    width: 50vw;
-  }
-}
-@media  screen and (min-width: 1000px) {
-  .drink {
-    width: 33vw;
-  }
+body {
+  /* background-image: url('../images/bg-paper@2x.jpg');
+  background-repeat: no-repeat;
+  background-size: cover; */
+  background: url("../images/bg-sanfrancisco.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 300vh;
+  margin: 0;
+  background-attachment: fixed;
+
 }
